@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jason class</title>
+	<link type="text/css" href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!--Jquery-->
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var objects;
+		objects = {"name": "John Johnson","street": "Oslo West 16","phone": "5551234567"};
+		var name = objects.name;
+		// alert(name;)
+		// multidimention array
+
+		var objects2 ;
+	  	objects2 = [{"name":"Mike Adenuga", "street": "Oslow West 16", 
+	  									"Phone":{
+
+	  											"phone1":12345678,
+	  											"phone2":87654321
+
+	  										}
+	  									},
+	  									{"name":"Charles Dimgba",
+	  									"street":"Oshogbo Avenue Lagos",
+	  									"phone":
+	  									{
+	  										"phone1":0801234674,
+	  										"phone2":0702345123
+	  									}
+	  								}
+	  					];
+
+	  					var name1 = objects2[0].name;
+	  					var fon1 = objects2[1].phone.phone1;
+	 					alert(fon1+" "+name1);
+
+	 })
+						$(#bot).click(function() {
+
+						})
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>JSON CLASS</h1>
+		</div>	
+		<dic class="container">
+			<button class="btn btn-info" id="bot"> Get Json Data </button>
+		</dic>	
+	</div>
+	<hr>
+	<p id="names"> </p>
+</body>
+</html>
